@@ -17,10 +17,10 @@ def percentage(part, whole):
 
 
 def trend(request):
-    API_key = "nAO81liKFcjgxJQ1Gl7LK6MJ6"
-    API_secret_key = "5SZd46hQWNt8292jiNND74zvZV39E0GXRF5OSRXxcaVtgPOTnQ"
-    Access_token = "1295769772546617346-UF3LzoVOsdci6QqsYSFm4Ji4K7cHTR"
-    Access_token_secret = "S4WGGOGp90gtmbBZhSdth7AtTQq6VZZSr1OxdbZqxCpLl"
+    API_key = "your API_key"
+    API_secret_key = "your API_secret_key"
+    Access_token = "your Access_token"
+    Access_token_secret = "your Access_token_secret"
 
     auth = OAuthHandler(API_key, API_secret_key)#auth object
     auth.set_access_token(Access_token, Access_token_secret)
