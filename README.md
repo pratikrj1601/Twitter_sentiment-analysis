@@ -1,6 +1,6 @@
 # Twitter_sentiment-analysis
 
-### In this project I haev used tweeepy library, django
+#### In this project I have used tweepy library, python and django framework to predict the sentiment present in the tweets....
 
 ![1](https://user-images.githubusercontent.com/83777309/117561844-ea386400-b0b7-11eb-9624-cca1a6d74ed1.PNG)<hr>
 ![2](https://user-images.githubusercontent.com/83777309/117561845-ec9abe00-b0b7-11eb-8d74-058fafce3605.PNG)<hr>
