@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+
+    <style>
+        .nav-link
+        {
+            margin-right: 60px;
+            font-size: 15px;
+            font-family: verdana;
+        }
+        form
+        {
+            height:300px;
+            width:100%;
+            color: white;
+            margin-top: 4px;
+            margin-bottom: 4px;
+            background-color: #0c002b;
+        }
+
+        </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>home</title>
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+ <i class="fa fa-twitter" style="font-size: 48px;"></i>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link active" href="#" style="color:black">Home</a>
+        <a class="nav-item nav-link" href="#about_section" style="color:black">About</a>
+        <a class="nav-item nav-link" href="trend" style="color:black">Trends</a>
+
+    </div>
+  </div>
+</nav><br>
+
+<img class="d-block w-100" src="{% static 'banner.jpg' %}" alt="First slide" style="width:100%; height:440px;">
+
+    <div>
+        <form action="search" method="POST">{% csrf_token %}<br>
+             <div class="col-sm-3">
+              <label class="mx-sm-4">Enter keyword/hashtag to search about:</label>
+              <input type="text" name="query" class="form-control mx-sm-4" placeholder="Hashtag">
+            </div><br>
+
+            <div class="col-sm-3">
+                <label class="mx-sm-4">Enter how many tweet to analyze:</label>
+                <input type="text" name="no_of_tweets" class="form-control mx-sm-4">
+            </div><br>
+
+            <button type="submit" class="btn btn-primary" style="margin-left: 40px;">Search</button>
+       </form>
+    </div>
+
+
+<div class="main" id="about_section">
+    <div class="container">
+        <div class="card">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+                <h2>01</h2>
+                <h3>Why Sentiment Analysis</h3>
+                <p>Sentiment analysis is extremely useful in social media monitoring as it allows us to gain an overview of the wider public opinion behind certain topics.</p>
+                <center><a href="https://en.wikipedia.org/wiki/Sentiment_analysis">Read More</a></center>
+            </div>
+        </div>
+
+        <div class="card">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+                <h2>02</h2>
+                <h3>What is TextBlob</h3>
+                <p>TextBlob is a Python library for processing textual data. It provides a consistent API for diving into common NLP tasks such as sentiment analysis, and more.</p>
+                <center><a href="https://textblob.readthedocs.io/en/dev/">Read More</a></center>
+            </div>
+        </div>
+
+        <div class="card">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+                <h2>03</h2>
+                <h3>what is Tweepy</h3>
+                <p>Tweepy is a Python library for accessing the Twitter API. Tweepy has many features like Creating and deleting Tweets. Follow and unfollow users.</p>
+                <center><a href="http://docs.tweepy.org/en/latest/">Read More</a></center>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

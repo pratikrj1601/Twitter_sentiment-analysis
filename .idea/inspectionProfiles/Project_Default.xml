@@ -1,0 +1,52 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+          <option value="N801" />
+          <option value="N806" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="pinal.kids.models.b_cloth.objects" />
+          <option value="pinal.kids.models.g_cloth.objects" />
+          <option value="pinal.kids.models.b_footwear.objects" />
+          <option value="pinal.kids.models.g_footwear.objects" />
+          <option value="pinal.mens.models.topwear.objects" />
+          <option value="pinal.mens.models.mens_indian_Wear.objects" />
+          <option value="pinal.womens.models.foot.objects" />
+          <option value="pinal.womens.models.western.objects" />
+          <option value="pinal.womens.models.indian_fusion_Wear.objects" />
+          <option value="pinal.appliances.models.air_conditioners.objects" />
+          <option value="pinal.appliances.models.tv.objects" />
+          <option value="pinal.appliances.models.fridge.objects" />
+          <option value="pinal.appliances.models.wm.objects" />
+          <option value="pinal.electronics.models.laptops.objects" />
+          <option value="pinal.electronics.models.mobiles.objects" />
+          <option value="pinal.electronics.models.speakers.objects" />
+          <option value="pinal.electronics.models.cameras.objects" />
+          <option value="pinal.homedecor.models.kitchen_appliance.objects" />
+          <option value="pinal.homedecor.models.home_furniture.objects" />
+          <option value="pinal.homedecor.models.decoration.objects" />
+          <option value="pinal.Cart.views.homedecor" />
+          <option value="pinal.Cart.views.kids" />
+          <option value="pinal.Cart.views.mens" />
+          <option value="pinal.Cart.views.womens" />
+          <option value="pinal.Cart.views.electronics" />
+          <option value="pinal.Cart.views.appliances" />
+          <option value="pinal.Ecommerce.views.appliances" />
+          <option value="pinal.Ecommerce.views.electronics" />
+          <option value="pinal.Ecommerce.views.homedecor" />
+          <option value="pinal.Ecommerce.views.kids" />
+          <option value="pinal.Ecommerce.views.mens" />
+          <option value="pinal.Ecommerce.views.womens" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
